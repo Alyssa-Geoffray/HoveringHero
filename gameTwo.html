@@ -275,8 +275,10 @@
 
     </script>
 
-    <br>
-    <button onmousedown="accelerate(-0.3)" onmouseup="accelerate(0.3)" id="hoverbtn">HOVER</button>
+    <br><audio id="bounce" src="Bounce.mp3" preload="auto"></audio>
+    <!-- Hover button with "audio" div for bounce sound -->
+    <button onclick="document.getElementById('bounce').play();" onmousedown="accelerate(-0.3)" onmouseup="accelerate(0.3)"
+        id="hoverbtn">HOVER</button>
     <div id="instructions">Avoid the obstacles!</div>
 
 
